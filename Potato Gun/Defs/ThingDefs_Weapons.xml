@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>Potato_bullet</defName>
+		<label>Potato Bullet</label>
+		<graphicData>
+			<texPath>Things/Projectile/LaunchedPotato</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Blunt</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>32</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>Potato_Gun</defName>
+		<label>Potato gun</label>
+		<description>A favorite creation of teenagers and bored engineers, this improvised vegetable launcher is surprisingly effective.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/ThumpCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>0.8</uiIconScale>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<!-- Now we define the weapon's stats. -->
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>3.6</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+		</statBases>
+		<!-- Now we choose what will be used to make the weapon. -->
+		<costList>
+			<RawPotatoes>25</RawPotatoes>
+			<Steel>40</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<!-- Now the weapon's requirements. -->
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<!--verbs are what the weapon does. -->
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<!-- Now we define the Bullet the weapon uses. -->
+				<defaultProjectile>Potato_bullet</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<range>32</range>
+				<soundCast>ThumpCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>3.1</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.1</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+
+</Defs>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ModMetaData>
+<name>Potato Gun</name>
+	<author>Potato</author>
+	<packageId>Potato.PotatoGun</packageId>
+	<description>Adds a potato gun. Life on the Rim has never been better.</description>
+	<supportedVersions>
+	<li>1.5</li>
+	</supportedVersions>
+</ModMetaData>
