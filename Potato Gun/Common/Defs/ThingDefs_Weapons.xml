@@ -34,7 +34,7 @@
 			<AccuracyShort>0.90</AccuracyShort>
 			<AccuracyMedium>0.80</AccuracyMedium>
 			<AccuracyLong>0.70</AccuracyLong>
-			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
 		</statBases>
 		<!-- Now we choose what will be used to make the weapon. -->
 		<costList>
@@ -42,20 +42,20 @@
 			<Steel>40</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
-		<!-- Now the weapon's requirements. -->
+		<!-- Now the weapon's crafting requirements. -->
 		<recipeMaker>
 			<skillRequirements>
-				<Crafting>6</Crafting>
+				<Crafting>5</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<!--verbs are what the weapon does. -->
+		<!--Verbs are what the weapon does. -->
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<!-- Now we define the Bullet the weapon uses. -->
 				<defaultProjectile>Potato_bullet</defaultProjectile>
-				<warmupTime>1.2</warmupTime>
+				<warmupTime>2.2</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<range>32</range>
 				<soundCast>ThumpCannon_Fire</soundCast>
