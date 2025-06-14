@@ -4,8 +4,9 @@
 <name>Potato Gun</name>
 	<author>Potato</author>
 	<packageId>Potato.PotatoGun</packageId>
-	<description>Adds a potato gun. Life on the Rim has never been better.</description>
+	<description>This is a demo mod that adds a potato gun. Life on the Rim has never been better!</description>
 	<supportedVersions>
 	<li>1.5</li>
+	<li>1.6</li>
 	</supportedVersions>
 </ModMetaData>
