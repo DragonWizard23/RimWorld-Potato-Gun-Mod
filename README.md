@@ -3,4 +3,5 @@
 </p>
 <p align="center">
 Adds a potato gun. Life on the Rim has never been better!
+Additional description available here: https://steamcommunity.com/sharedfiles/filedetails/?id=3284553782
 </p>
